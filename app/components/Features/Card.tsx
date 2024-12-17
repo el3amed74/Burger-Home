@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 // import FeatureImg1 from "@/public/images/f1.jpg";
 interface props{
-    img: string
+    img: StaticImageData
 }
 const Card = ({img}:props) => {
     return (
