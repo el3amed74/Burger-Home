@@ -10,14 +10,14 @@ interface props {
     image: StaticImageData;
 }
 
-const BurgerCard = ({ title, image, price }: props) => {
+const BurgerCard = ({ title, image, price,key }: props) => {
     const GenerateStars = () => {
         return Array.from({ length: 6 }).map((_, index) => (
             <FaStar className="w-[1rem] h--[1rem] text-yellow-600" />
         ));
     };
     return (
-        <div className="bg-white p-6 m-3 rounded-lg">
+        <div className="bg-white p-6 m-3 rounded-lg" key={key}>
             <div className="w-[200px] h-[200px] mx-auto">
                 <Image src={image} width={200} height={200} alt={title} className="w-[100%] h-[100%] object-cover" />
             </div>
