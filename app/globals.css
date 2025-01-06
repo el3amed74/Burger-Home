@@ -12,3 +12,10 @@
         font-bold text-center text-gray-900 md:leading-[4rem] leading-[3rem]
     }
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
